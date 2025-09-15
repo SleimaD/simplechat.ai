@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link
+      rel="icon"
+      href="./public/src/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <title>AI Chatbot - simplechat.ai | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="app">
+
+      <button class="collapse-btn-closed" aria-label="Expand sidebar">
+        <img src="./public/src/Off.svg" alt="" />
+      </button>
+      
+      <aside class="sidebar">
+        <header class="brand">
+          <img src="./public/src/logo-full.svg" alt="simplechat.ai" class="logo-full" />
+           <button class="collapse-btn-open" aria-label="Collapse sidebar">
+            <img src="./public/src/Off.svg" alt="" />
+          </button>
+        </header>
+
+        <button class="new-chat" type="button">
+          <img src="./public/src/Add_round_fill.svg" alt="" />
+          <span>New Chat</span>
+        </button>
+
+        <nav class="conversations" aria-label="Conversations">
+          <h2>Conversations</h2>
+          <ul class="conv-list"></ul>
+        </nav>
+      </aside>
+
+      <main class="chat" aria-label="Chat window">
+        <div class="chat-card">
+          <ol class="messages" id="messages"></ol>
+          <form class="composer" id="composer" autocomplete="off">
+            <label class="visually-hidden" for="prompt">Ask simplechat.ai anything</label>
+            <input
+              id="prompt"
+              name="prompt"
+              placeholder="Ask simplechat.ai anything"
+              required
+            />
+            <button class="send" aria-label="Send" type="submit">
+              <img src="./public/src/send.svg" alt="" />
+            </button>
+          </form>       
+        </div>
+      </main>
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="#">Sleima</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+
+    <script src="public/js/app.js" defer></script>
+  </body>
+</html>
