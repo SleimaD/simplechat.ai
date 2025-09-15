@@ -7,7 +7,7 @@ const newChatBtn = document.querySelector(".new-chat");
 const ICONS = {
   conv: "./public/src/Chat_fill.svg",
   rename: "./public/src/edit.svg",
-  delete: "./public/src/trash.svg",
+  delete: "./public/src/Trash.svg",
   add: "./public/src/Add_round_fill.svg",
   done: "./public/src/Done_round.svg",
   close: "./public/src/Close_round.svg",
